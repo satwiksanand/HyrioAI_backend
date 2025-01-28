@@ -8,7 +8,11 @@ const rootRouter = require("./routes/index");
 const PORT = 3000;
 app.use(
   cors({
-    origin: "*",
+    origin: [
+      "https://hyrioaifrontend.vercel.app/",
+      "http://localhost:5173/",
+      "https://hyrioaifrontend-dzvn8ybh0-satwik-sanands-projects.vercel.app",
+    ],
     credentials: true,
   })
 );

@@ -110,6 +110,7 @@ const signin = async (req, res, next) => {
         expires: new Date(Date.now() + 25892000000),
         secure: true,
         sameSite: "None",
+        partitioned: true,
       })
       .json({
         message: "signin successful!",
